@@ -1,0 +1,19 @@
+uvicorn main:app --reload    запуск сервера
+uvicorn app.main:app --reload
+
+
+миграции
+alembic init migrations
+alembic init app/migrations
+alembic revision --autogenerate -m 'Add User, Category, Tag, Post models'
+alembic upgrade head
+
+
+
+docker commands
+
+sudo docker-compose build
+
+sudo docker-compose up -d
+
+sudo docker-compose exec web alembic upgrade head

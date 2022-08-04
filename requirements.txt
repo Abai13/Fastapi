@@ -1,0 +1,12 @@
+fastapi[all]
+psycopg2-binary
+sqlalchemy
+alembic
+python-dotenv
+sqladmin
+passlib[bcrypt]
+fastapi-mail
+python-jose[cryptography]
+python-slugify
+fastapi-pagination
+flake8
